@@ -1,0 +1,248 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport"
+         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>AgroConnect: интегрированные решения для вашего успеха</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="shortcut icon" href="{% static 'favicon.png' %}" type="image/x-icon">
+   <link rel="stylesheet" href="{% static 'styles/index.css' %}">
+   <link rel="stylesheet" href="{% static 'styles/swiper.css' %}">
+   <link rel="stylesheet" href="{% static 'styles/swiper-bundle.css' %}">
+</head>
+<body class="*:font-extralight bg-gray-200">
+
+<section class="section-slider *:text-white">
+   <div class="swiper-container h-full relative">
+      <div class="swiper-wrapper h-full">
+         <div class="swiper-slide slide-1 h-full flex flex-col justify-center">
+            <div class="swiper-content mx-4 my-14 lg:mx-20">
+               <h4 class="text-2xl text-center mb-10 lg:text-left lg:text-4xl">AgroConnect - лучшее решение для вашего успеха.</h4>
+               <ul class="flex flex-col gap-3.5">
+                  <li class="flex gap-3.5 items-center">
+                     <img class="w-2.5 h-2.5" src="{% static 'images/ellipse.png' %}">
+                     <span class="text-lg lg:w-7/12">Стабильная закупка зерна</span>
+                  </li>
+                  <li class="flex gap-3.5 items-center">
+                     <img class="w-2.5 h-2.5" src="{% static 'images/ellipse.png' %}">
+                     <span class="text-lg lg:w-7/12">Продажа удобрений и средств защиты</span>
+                  </li>
+                  <li class="flex gap-3.5 items-center">
+                     <img class="w-2.5 h-2.5" src="{% static 'images/ellipse.png' %}">
+                     <span class="text-lg lg:w-7/12">Доставка по всей России</span>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="swiper-slide slide-2 h-full flex flex-col justify-center">
+            <div class="swiper-content mx-4 my-14 lg:mx-20">
+               <h4 class="text-2xl text-center mb-10 lg:text-left lg:text-4xl">Преимущества</h4>
+               <ul class="flex flex-col gap-3.5">
+                  <li class="flex gap-3.5 items-center">
+                     <img class="w-2.5 h-2.5" src="{% static 'images/ellipse.png' %}">
+                     <span class="text-lg lg:w-7/12">Стабильные цены и надежность</span>
+                  </li>
+                  <li class="flex gap-3.5 items-center">
+                     <img class="w-2.5 h-2.5" src="{% static 'images/ellipse.png' %}">
+                     <span class="text-lg lg:w-7/12">Качественные удобрения и средства защиты растений</span>
+                  </li>
+                  <li class="flex gap-3.5 items-center">
+                     <img class="w-2.5 h-2.5" src="{% static 'images/ellipse.png' %}">
+                     <span class="text-lg lg:w-7/12">Консультации специалистов</span>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="swiper-slide slide-3 h-full flex flex-col justify-center">
+            <div class="swiper-content mx-4 my-14 lg:mx-20">
+               <h4 class="text-2xl text-center mb-10 lg:text-left lg:text-4xl">Все о сделке</h4>
+               <ul class="flex flex-col gap-3.5">
+                  <li class="flex gap-3.5 items-center">
+                     <img class="w-2.5 h-2.5" src="{% static 'images/ellipse.png' %}">
+                     <span class="text-lg lg:w-7/12">Гарантированная справедливая сделка для каждого фермера, обеспечивающая их благосостояние и уверенность.</span>
+                  </li>
+                  <li class="flex gap-3.5 items-center">
+                     <img class="w-2.5 h-2.5" src="{% static 'images/ellipse.png' %}">
+                     <span class="text-lg lg:w-7/12">Доставка по всей территории России с учетом вашей локации и требований.</span>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div class="swiper-pagination"></div>
+   </div>
+</section>
+
+<section class="section-catalog catalog-grain px-4">
+   <h3 class="section-name text-2xl mt-10">Каталог зерна</h3>
+   <div class="products-container">
+      <div class="product-block">
+         <h5 class="product-name">Подсолнечник</h5>
+         <img class="product-image" src="{% static 'images/products-grain/sunflower.png' %}">
+         <div class="additional-contacts hidden absolute bg-white bottom-0 left-0 w-full *:w-full *:h-full *:flex *:items-center *:justify-center *:py-1">
+            <a href="tel:+79901485795"><img class="w-7 h-7" src="{% static 'images/phone.png' %}"></a>
+            <a href="mailto:agroconnectoff@gmail.com"><img class="w-7 h-7" src="{% static 'images/email.png' %}"></a>
+            <a href="https://t.me/denismlt"><img class="w-7 h-7" src="{% static 'images/telegram.png' %}"></a>
+         </div>
+      </div>
+      <div class="product-block">
+         <h5 class="product-name">Соя</h5>
+         <img class="product-image" src="{% static 'images/products-grain/soy.png' %}">
+         <div class="additional-contacts hidden absolute bg-white bottom-0 left-0 w-full *:w-full *:h-full *:flex *:items-center *:justify-center *:py-1">
+            <a href="tel:+79901485795"><img class="w-7 h-7" src="{% static 'images/phone.png' %}"></a>
+            <a href="mailto:agroconnectoff@gmail.com"><img class="w-7 h-7" src="{% static 'images/email.png' %}"></a>
+            <a href="https://t.me/denismlt"><img class="w-7 h-7" src="{% static 'images/telegram.png' %}"></a>
+         </div>
+      </div>
+      <div class="product-block">
+         <h5 class="product-name">Пшеница</h5>
+         <img class="product-image" src="{% static 'images/products-grain/wheat.png' %}">
+         <div class="additional-contacts hidden absolute bg-white bottom-0 left-0 w-full *:w-full *:h-full *:flex *:items-center *:justify-center *:py-1">
+            <a href="tel:+79901485795"><img class="w-7 h-7" src="{% static 'images/phone.png' %}"></a>
+            <a href="mailto:agroconnectoff@gmail.com"><img class="w-7 h-7" src="{% static 'images/email.png' %}"></a>
+            <a href="https://t.me/denismlt"><img class="w-7 h-7" src="{% static 'images/telegram.png' %}"></a>
+         </div>
+      </div>
+      <div class="product-block">
+         <h5 class="product-name">Ячмень</h5>
+         <img class="product-image" src="{% static 'images/products-grain/barley.png' %}">
+         <div class="additional-contacts hidden absolute bg-white bottom-0 left-0 w-full *:w-full *:h-full *:flex *:items-center *:justify-center *:py-1">
+            <a href="tel:+79901485795"><img class="w-7 h-7" src="{% static 'images/phone.png' %}"></a>
+            <a href="mailto:agroconnectoff@gmail.com"><img class="w-7 h-7" src="{% static 'images/email.png' %}"></a>
+            <a href="https://t.me/denismlt"><img class="w-7 h-7" src="{% static 'images/telegram.png' %}"></a>
+         </div>
+      </div>
+      <div class="product-block">
+         <h5 class="product-name">Горчица</h5>
+         <img class="product-image" src="{% static 'images/products-grain/mustard.png' %}">
+         <div class="additional-contacts hidden absolute bg-white bottom-0 left-0 w-full *:w-full *:h-full *:flex *:items-center *:justify-center *:py-1">
+            <a href="tel:+79901485795"><img class="w-7 h-7" src="{% static 'images/phone.png' %}"></a>
+            <a href="mailto:agroconnectoff@gmail.com"><img class="w-7 h-7" src="{% static 'images/email.png' %}"></a>
+            <a href="https://t.me/denismlt"><img class="w-7 h-7" src="{% static 'images/telegram.png' %}"></a>
+         </div>
+      </div>
+      <div class="product-block">
+         <h5 class="product-name">Просо</h5>
+         <img class="product-image" src="{% static 'images/products-grain/millet.png' %}">
+         <div class="additional-contacts hidden absolute bg-white bottom-0 left-0 w-full *:w-full *:h-full *:flex *:items-center *:justify-center *:py-1">
+            <a href="tel:+79901485795"><img class="w-7 h-7" src="{% static 'images/phone.png' %}"></a>
+            <a href="mailto:agroconnectoff@gmail.com"><img class="w-7 h-7" src="{% static 'images/email.png' %}"></a>
+            <a href="https://t.me/denismlt"><img class="w-7 h-7" src="{% static 'images/telegram.png' %}"></a>
+         </div>
+      </div>
+      <div class="product-block">
+         <h5 class="product-name">Горох</h5>
+         <img class="product-image" src="{% static 'images/products-grain/peas.png' %}">
+         <div class="additional-contacts hidden absolute bg-white bottom-0 left-0 w-full *:w-full *:h-full *:flex *:items-center *:justify-center *:py-1">
+            <a href="tel:+79901485795"><img class="w-7 h-7" src="{% static 'images/phone.png' %}"></a>
+            <a href="mailto:agroconnectoff@gmail.com"><img class="w-7 h-7" src="{% static 'images/email.png' %}"></a>
+            <a href="https://t.me/denismlt"><img class="w-7 h-7" src="{% static 'images/telegram.png' %}"></a>
+         </div>
+      </div>
+      <div class="product-block">
+         <h5 class="product-name">Кукуруза</h5>
+         <img class="product-image" src="{% static 'images/products-grain/corn.png' %}">
+         <div class="additional-contacts hidden absolute bg-white bottom-0 left-0 w-full *:w-full *:h-full *:flex *:items-center *:justify-center *:py-1">
+            <a href="tel:+79901485795"><img class="w-7 h-7" src="{% static 'images/phone.png' %}"></a>
+            <a href="mailto:agroconnectoff@gmail.com"><img class="w-7 h-7" src="{% static 'images/email.png' %}"></a>
+            <a href="https://t.me/denismlt"><img class="w-7 h-7" src="{% static 'images/telegram.png' %}"></a>
+         </div>
+      </div>
+   </div>
+</section>
+
+<section class="section-catalog catalog-fertilizer px-4">
+   <h3 class="section-name text-2xl mt-10">Каталог удобрений</h3>
+   <div class="products-container">
+      <div class="product-block">
+         <h5 class="product-name">Карбамид</h5>
+         <img class="product-image" src="{% static 'images/products-fertilizer/urea.png' %}">
+         <div class="additional-contacts hidden absolute bg-white bottom-0 left-0 w-full *:w-full *:h-full *:flex *:items-center *:justify-center *:py-1">
+            <a href="tel:+79901485795"><img class="w-7 h-7" src="{% static 'images/phone.png' %}"></a>
+            <a href="mailto:agroconnectoff@gmail.com"><img class="w-7 h-7" src="{% static 'images/email.png' %}"></a>
+            <a href="https://t.me/denismlt"><img class="w-7 h-7" src="{% static 'images/telegram.png' %}"></a>
+         </div>
+      </div>
+      <div class="product-block">
+         <h5 class="product-name">Кас 32</h5>
+         <img class="product-image" src="{% static 'images/products-fertilizer/kas-32.png' %}">
+         <div class="additional-contacts hidden absolute bg-white bottom-0 left-0 w-full *:w-full *:h-full *:flex *:items-center *:justify-center *:py-1">
+            <a href="tel:+79901485795"><img class="w-7 h-7" src="{% static 'images/phone.png' %}"></a>
+            <a href="mailto:agroconnectoff@gmail.com"><img class="w-7 h-7" src="{% static 'images/email.png' %}"></a>
+            <a href="https://t.me/denismlt"><img class="w-7 h-7" src="{% static 'images/telegram.png' %}"></a>
+         </div>
+      </div>
+      <div class="product-block">
+         <h5 class="product-name">Селитра</h5>
+         <img class="product-image" src="{% static 'images/products-fertilizer/saltpeter.png' %}">
+         <div class="additional-contacts hidden absolute bg-white bottom-0 left-0 w-full *:w-full *:h-full *:flex *:items-center *:justify-center *:py-1">
+            <a href="tel:+79901485795"><img class="w-7 h-7" src="{% static 'images/phone.png' %}"></a>
+            <a href="mailto:agroconnectoff@gmail.com"><img class="w-7 h-7" src="{% static 'images/email.png' %}"></a>
+            <a href="https://t.me/denismlt"><img class="w-7 h-7" src="{% static 'images/telegram.png' %}"></a>
+         </div>
+      </div>
+      <div class="product-block">
+         <h5 class="product-name">Нитроамафоз</h5>
+         <img class="product-image" src="{% static 'images/products-fertilizer/nitroamophos.png' %}">
+         <div class="additional-contacts hidden absolute bg-white bottom-0 left-0 w-full *:w-full *:h-full *:flex *:items-center *:justify-center *:py-1">
+            <a href="tel:+79901485795"><img class="w-7 h-7" src="{% static 'images/phone.png' %}"></a>
+            <a href="mailto:agroconnectoff@gmail.com"><img class="w-7 h-7" src="{% static 'images/email.png' %}"></a>
+            <a href="https://t.me/denismlt"><img class="w-7 h-7" src="{% static 'images/telegram.png' %}"></a>
+         </div>
+      </div>
+      <div class="product-block">
+         <h5 class="product-name">Сульфоамофоз</h5>
+         <img class="product-image" src="{% static 'images/products-fertilizer/sulfoamophosis.png' %}">
+         <div class="additional-contacts hidden absolute bg-white bottom-0 left-0 w-full *:w-full *:h-full *:flex *:items-center *:justify-center *:py-1">
+            <a href="tel:+79901485795"><img class="w-7 h-7" src="{% static 'images/phone.png' %}"></a>
+            <a href="mailto:agroconnectoff@gmail.com"><img class="w-7 h-7" src="{% static 'images/email.png' %}"></a>
+            <a href="https://t.me/denismlt"><img class="w-7 h-7" src="{% static 'images/telegram.png' %}"></a>
+         </div>
+      </div>
+   </div>
+</section>
+
+<section class="section-contacts border-t-2 border-zinc-300 my-8 p-4">
+
+   <h3 class="section-name text-2xl my-5">Связаться с нами:</h3>
+   <ul class="flex flex-col gap-2.5 ml-5 mb-5 *:text-base">
+      <li class="flex gap-2.5 items-center">
+         <img class="w-5 h-5" src="{% static 'images/phone.png' %}">
+         <a href="tel:+79901485795"><span>+79901485795</span></a>
+      </li>
+      <li class="flex gap-2.5 items-center">
+         <img class="w-5 h-5" src="{% static 'images/email.png' %}">
+         <a href="mailto:agroconnectoff@gmail.com"><span>agroconnectoff@gmail.com</span></a>
+      </li>
+      <li class="flex gap-2.5 items-center">
+         <img class="w-5 h-5" src="{% static 'images/telegram.png' %}">
+         <a href="https://t.me/denismlt"><span>@denismlt</span></a>
+      </li>
+   </ul>
+
+   <img class="w-full hidden lg:block" src="{% static 'images/contact-or-block-desktop.png' %}">
+   <img class="w-full block lg:hidden" src="{% static 'images/contact-or-block-mobile.png' %}">
+
+   <form action="/contact-submit/" method="post">
+      <h3 class="section-name text-2xl mt-9 mb-5">Оставить заявку:</h3>
+      {% csrf_token %}
+      <input class="w-full p-3 font-thin rounded mb-2"
+             type="tel"
+             name="phone"
+             pattern="\+?[0-9\s\-\(\)]+"
+             placeholder="Ваш номер телефона"
+             required
+      >
+      <button class="submit-contact-form text-white w-full py-3 font-light rounded" type="submit">Отправить</button>
+   </form>
+</section>
+
+<script src="{% static 'scripts/swiper-bundle.min.js' %}"></script>
+<script src="{% static 'scripts/swiper.js' %}"></script>
+<script src="{% static 'scripts/index.js' %}"></script>
+</body>
+</html>
